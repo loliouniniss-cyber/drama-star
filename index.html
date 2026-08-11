@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Drama Star | مسلسلات</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="#">Drama <span>Star</span></a>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#series">المسلسلات</a>
+      <a href="#about">حول الموقع</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">أهلاً بك في Drama Star</p>
+        <h1>اكتشفي مسلسلاتك المفضلة ✨</h1>
+        <p class="hero-text">نسخة تجريبية أولى لموقع عربي بسيط وسريع. يمكنك لاحقاً إضافة الأعمال المرخّصة والحلقات والروابط الرسمية.</p>
+        <a class="btn" href="#series">تصفحي المسلسلات</a>
+      </div>
+    </section>
+
+    <section class="section" id="series">
+      <div class="section-head">
+        <h2>المسلسلات</h2>
+        <input id="search" type="search" placeholder="🔎 ابحثي عن مسلسل..." aria-label="البحث">
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-genre="all">الكل</button>
+        <button class="filter" data-genre="كوري">كوري</button>
+        <button class="filter" data-genre="ياباني">ياباني</button>
+        <button class="filter" data-genre="صيني">صيني</button>
+      </div>
+
+      <div class="grid" id="cards">
+        <article class="card" data-title="مثال كوري" data-genre="كوري">
+          <div class="poster poster-one"><span>مسلسل 01</span></div>
+          <div class="card-body">
+            <span class="tag">كوري</span>
+            <h3>مثال كوري</h3>
+            <p>أضيفي هنا وصف المسلسل.</p>
+            <button class="watch" onclick="showMessage('أضيفي رابط المشاهدة الرسمي هنا ✨')">التفاصيل</button>
+          </div>
+        </article>
+
+        <article class="card" data-title="مثال ياباني" data-genre="ياباني">
+          <div class="poster poster-two"><span>مسلسل 02</span></div>
+          <div class="card-body">
+            <span class="tag">ياباني</span>
+            <h3>مثال ياباني</h3>
+            <p>أضيفي هنا وصف المسلسل.</p>
+            <button class="watch" onclick="showMessage('أضيفي رابط المشاهدة الرسمي هنا ✨')">التفاصيل</button>
+          </div>
+        </article>
+
+        <article class="card" data-title="مثال صيني" data-genre="صيني">
+          <div class="poster poster-three"><span>مسلسل 03</span></div>
+          <div class="card-body">
+            <span class="tag">صيني</span>
+            <h3>مثال صيني</h3>
+            <p>أضيفي هنا وصف المسلسل.</p>
+            <button class="watch" onclick="showMessage('أضيفي رابط المشاهدة الرسمي هنا ✨')">التفاصيل</button>
+          </div>
+        </article>
+      </div>
+      <p id="empty" class="empty hidden">ما لقيتش نتائج 😅</p>
+    </section>
+
+    <section class="section about" id="about">
+      <h2>حول الموقع</h2>
+      <p>هذا نموذج تجريبي. قبل نشر أي مسلسل أو حلقة، تأكدي من أن لديك الحق في عرض المحتوى أو استخدمي روابط المنصات الرسمية.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 Drama Star — النسخة التجريبية</footer>
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
